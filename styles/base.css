@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+html {
+    display: block;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid rgb(0 0 0 / .2);
+    background-color: #eee;
+}
+
+
+
+#about {
+    grid-column: 1/3;
+}
+
+h1 {
+    grid-column: 1/4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#resource {
+    grid-column: 3/4;
+}
+
+
+header,
+footer {
+    background-color: #333;
+    grid-column: 1/4;
+    color: white;
+}
+
+
+
+h2 {
+    text-align: center;
+    background-color: #154260;
+    color: #ffffff;
+    padding: 0.5rem;
+}
+
+h1 {
+    background-color: #ddd;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(0 0 0 / .2);
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.card {
+    border: 1px solid #154260;
+    border-radius: 5px;
+}
+
+.card p {
+    padding: 1rem;
+}
+
+
+
+img.history {
+    padding-right: 1rem;
+}
+
+.inside {
+    display: flex;
+    width: 100%;
+    /* flex-wrap: wrap; */
+}
+
+.left-inside {
+    width: 75%;
+    box-sizing: border-box;
+}
+
+
+
+.right-inside {
+    width: 20%;
+    box-sizing: border-box;
+
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.section-title {
+    text-align: center;
+
+}
+
+.section-title hr {
+    border: none;
+    border-top: 1px solid black;
+    margin: 0.5rem 4rem 0 4rem;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(0 0 0 / .2);
+    align-items: center;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    font-weight: 700;
+    display: block;
+    color: #eee;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigation a:hover,
+.navigation a:active {
+    text-decoration: underline;
+    background-color: green;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration: yellowgreen;
+}
+
+footer {
+    display: block;
+    unicode-bidi: isolate;
+    text-align: center;
+}
+
+.flag {
+    float: left;
+    margin: 1rem;
+    text-align: center;
+}
+
+.flag image {
+    display: block;
+
+}
+
+
+.uganda {
+    float: left;
+}
+
+footer {
+    background-color: #154260;
+    margin-top: 1rem;
+    padding: 1rem;
+    color: #ffffff;
+}
+
+/* .card {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(21, 66, 96);
+    border-image: initial;
+    border-radius: 5px;
+} */
+
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+#resource ul {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+#course-title {
+    display: block;
+    color: white;
+    font-weight: 700;
+    padding: 1rem;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
