@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* mobile **************************/
+
+
+header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    color: white;
+    border: 1rem;
+}
+
+footer {
+    display: block;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+
+
+
+header,
+footer,
+main {
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #eee;
+    padding: 1.5rem;
+}
+
+header,
+footer {
+    background-color: purple;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px #333;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding: 1rem;
+    background-color: palegreen;
+    text-align: center;
+    font-family: "Acme", Arial, sans-serif;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: darkgreen;
+}
+
+
+
+.navigation {
+    background-color: #36454f;
+}
+
+.navigation {
+    display: block;
+    justify-content: space-around;
+    list-style: none;
+    background-color: red;
+    flex: 1 1 auto
+}
+navigation a {
+    display: block;
+    list-style: none;
+    color: gold;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 20px;
+    font-size: 1.5rem;
+
+}
+
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+
+
+.active::before {
+    content: "📍";
+}
+
+
+
+.navigation a:hover {
+    background-color: greenyellow;
+    color: blue;
+}
+
+
+.active {
+    background-color: blue;
+}
+
+/*********************************personal2****************************/
+
+
+
+/**********************************personal2*************************************/
+
+
+
+
+
+
+
+
+
+
+
+/*******************************edit******************************/
+
+
+figure {
+    background-color: #fff;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+figcaption {
+    font-size: smaller;
+}
+
+/* hover effect */
+/* .hover:hover {
+    box-shadow: 0 0 50px #333;
+} */
+
+/**********************edit**************************************/
+
+
+div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* repeat(3, 1fr); */
+    align-items: center;
+    grid-gap: 10px;
+
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* separetor from above */
+
+
+
+
+
+
+
+figure {
+    background-color: #fff;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 0.5rem;
+}
+
+figcaption {
+    font-size: smaller;
+}
+
+
+.open a {
+    display: block;
+}
+
+
+
+.navigation a {
+    display: none;
+    /* flex: 1 1 100%; */
+
+}
+
+
+
+/******************************personal1*****************************************/
+
+h1 {
+    font-size: 2.5rem;
+    padding: 1rem;
+    background-color: #333;
+    text-align: center;
+    font-family: "Acme", Arial, sans-serif;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: darkgreen;
+}
+
+
+
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 0.5rem;
+}
+
+figcaption {
+    font-size: smaller;
+}
+
+hover effect
+.hover:hover {
+    box-shadow: 0 0 50px #333;
+}
