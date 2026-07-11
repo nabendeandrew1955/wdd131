@@ -10,13 +10,50 @@
  }
 
  .navigation {
-     display:block;
+     display: block;
      flex-direction: row;
      justify-content: space-around;
      list-style: none;
      background-color: indigo;
      flex: 1 1 auto
  }
+
+ /********************************************han*********************/
+ /****************HAMBURGER NAVIGATION*****************/
+
+ #menu {
+     background: none;
+     border: none;
+     color: purple;
+     cursor: pointer;
+
+ }
+
+ /* #menu::before {
+    content: "\2630";
+    font-size: 2rem;
+
+}
+
+#menu.open::before {
+    content: "\00D7";
+
+
+} */
+
+ .navigation {
+     display: none;
+     background-color: #154260;
+     ;
+     align-items: center;
+ }
+
+ .navigation.open {
+     display: block
+ }
+
+
+
 
  #menu::before {
      content: "☰";
@@ -25,11 +62,12 @@
  #menu.open::before {
      content: "❌";
  }
-.active {
-    background-color: green;
-    display: block;
-    
-}
+
+ .active {
+     background-color: green;
+     display: block;
+
+ }
 
 
  main {
@@ -110,7 +148,7 @@
 
 
 
- 
+
 
  h1 {
      font-size: 2rem;
@@ -136,7 +174,7 @@
      padding: 0.5rem;
  }
 
- 
+
 
  figure {
      background-color: #fff;
@@ -159,7 +197,7 @@
 
 
 
- 
+
 
  .navigation a {
      display: block;
