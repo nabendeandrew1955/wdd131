@@ -157,5 +157,7 @@ document.querySelectorAll("nav a").forEach(link => {
     });
 });
 
+displayTemples(filteredList)
+
 
 
