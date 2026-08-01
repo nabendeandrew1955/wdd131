@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nabende Andrew creating forms for submitting clients views">
+    <meta name="author" content="Nabende Andrew Mafabi">
+    <title>Product Form Review</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="wf1">
+            <fieldset>
+                <label>
+                    Product Name
+                    <select name="subject" id="subject" required>
+                        <option value="">Please Select a Product &#9662</option>
+                        <option value="fc-1888">flux capacitor</option>
+                        <option value="fc-2050">power laces</option>
+                        <option value="fs-1987">time circuits</option>
+                        <option value="ac-2000">low voltage reactor</option>
+                        <option value="jj-1969">warp equalizer</option>
+
+                    </select>
+                </label>
+                <fieldset>
+                    <legend>Overall Rating</legend>
+                    <div>Overall Rating</div>
+                    <div class="star-rating">
+                        <label>⭐⭐⭐⭐⭐<input type="radio" name="overall" value="star-5"></label>
+                        <label>⭐⭐⭐⭐<input type="radio" name="overall" value="star-4"></label>
+                        <label>⭐⭐⭐<input type="radio" name="overall" value="star-3"></label>
+                        <label>⭐⭐<input type="radio" name="overall" value="star-2"></label>
+                        <label>⭐<input type="radio" name="overall" value="star-1"></label>
+                    </div>
+                </fieldset>
+                <label>Date of Installation:<input type="date" id="completeDate" name="completeDate"></label>
+
+                <div>Which features did you find useful in the product?</div>
+                <label><input type="checkbox" id="editing" name="editing" value="yes"> Durability</label>
+                <label><input type="checkbox" id="code" name="code" value="yes"> Ease to use</label>
+                <label><input type="checkbox" id="process" name="process" value="yes"> Performance</label>
+                <label><input type="checkbox" id="client" name="client" value="yes"> Design</label>
+            </fieldset>
+            <fieldset>
+                <legend>Written Review (Optional)</legend>
+                <label><Textarea id="details" name="details" cols="50" rows="10"></Textarea></label>
+                <label> Your Name(Optional)<input type="text" id="your_name" name="your_name"></label>
+            </fieldset>
+            <input type="submit" value="Post Review">
+
+        </form>
+        <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+    </main>
+    <footer>
+        <p> ©<span id="year"></span>🐓Nabende Andrew Mafabi🌴</p>
+        <p class="date"><span id="lastmodified">19/05/2026</span></p>
+    </footer>
+
+</body>
+
+</html>
