@@ -21,7 +21,7 @@
                 <label>
                     Product Name
                     <select name="subject" id="subject" required>
-                        <option value="">Please Select a Product &#9662</option>
+                        <option value="disabled">Please Select a Product &#9662</option>
                         <option value="fc-1888">flux capacitor</option>
                         <option value="fc-2050">power laces</option>
                         <option value="fs-1987">time circuits</option>
@@ -34,11 +34,11 @@
                     <legend>Overall Rating</legend>
                     <div>Overall Rating</div>
                     <div class="star-rating">
-                        <label>⭐⭐⭐⭐⭐<input type="radio" name="overall" value="star-5"></label>
-                        <label>⭐⭐⭐⭐<input type="radio" name="overall" value="star-4"></label>
-                        <label>⭐⭐⭐<input type="radio" name="overall" value="star-3"></label>
-                        <label>⭐⭐<input type="radio" name="overall" value="star-2"></label>
-                        <label>⭐<input type="radio" name="overall" value="star-1"></label>
+                        <label>⭐⭐⭐⭐⭐<input type="radio" id="star-5" name="overall" value="star-5"></label>
+                        <label>⭐⭐⭐⭐<input type="radio" id="star-4" name="overall" value="star-4"></label>
+                        <label>⭐⭐⭐<input type="radio" id="star-3" name="overall" value="star-3"></label>
+                        <label>⭐⭐<input type="radio" id="star-2" name="overall" value="star-2"></label>
+                        <label>⭐<input type="radio" id="star-1" name="overall" value="star-1"></label>
                     </div>
                 </fieldset>
                 <label>Date of Installation:<input type="date" id="completeDate" name="completeDate"></label>
