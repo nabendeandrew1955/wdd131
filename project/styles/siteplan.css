@@ -281,7 +281,7 @@ input[type="checkbox"] {
     gap: 0.5rem;
 }
 
-button {
+/* button {
     margin: 1rem;
     background-color: blue;
     color: #fff;
@@ -291,7 +291,7 @@ button {
     font-size: 1rem;
     display: inline-block;
 
-}
+} */
 
 button:hover {
     background-color: red;
@@ -336,7 +336,7 @@ button:hover {
     max-width: 100%;
 }
 
-.action {
+/* .action {
     display: flex;
     background-color: green;
     max-width: 840px;
@@ -346,9 +346,9 @@ button:hover {
     padding: 1rem;
     width: 100%;
 
-}
+} */
 
-.action form {
+/* .action form {
     max-width: 400px;
     margin: 0 auto;
     padding: 1rem;
@@ -365,7 +365,7 @@ button:hover {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 /0.2);
     padding: 1rem;
-}
+} */
 
 .history div {
     border: 1px solid rgb(0 0 0 /0.2);
