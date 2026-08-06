@@ -54,7 +54,7 @@ article {
     text-decoration: none;
 }
 
-/* .hero {
+ .hero {
     position: relative;
 }
 
@@ -78,7 +78,7 @@ article {
 .hero article img {
     float: right;
     width: 125px;
-    border: 1px solid rgb(0 0 0 /0.2);
+    border: 1px solid rgba(154, 148, 148, 0.2);
     padding: 2px;
     margin: 5px;
     box-shadow: 0 0 30px;
@@ -93,8 +93,8 @@ article {
     text-align: center;
     opacity: 0.7;
     background-color: var(--secondary-color);
-    color: #fff;
-} */
+    color: var(--primary-color);
+} 
 
 header {
     margin: 1rem auto;
@@ -147,7 +147,7 @@ header nav a:hover {
     margin: 10px auto;
 } */
 
-/* .history {
+ .history {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr auto;
     align-items: center;
@@ -157,29 +157,29 @@ header nav a:hover {
     max-width: 840px;
     margin: 10px auto;
 
-} */
+} 
 
-/* .history h2 {
+.history h3 {
     display: flex;
     grid-column: 1/5;
     grid-row: 1/2;
     background-color: var(--accent2-color);
     place-content: center;
-} */
+} 
 
-/* .history p {
+ .history p {
     width: 100%;
     height: auto;
-} */
+} 
 
 /* .adventure figure {
     max-width: 200px;
     height: auto;
 } */
 
-/* .adventure {
+.adventure {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     align-items: center;
     background-color: #eee;
     padding: 10px;
@@ -187,21 +187,23 @@ header nav a:hover {
     max-width: 840px;
     margin: 10px auto;
 
-} */
+} 
 
-/* .adventure h2 {
-    display: flex;
-    grid-column: 1/7;
+ .adventure h3 {
+    display: grid;
+    grid-column: 1/6;
     grid-row: 1/2;
     background-color: var(--accent2-color);
     place-content: center;
-} */
+} 
 
 footer {
     display: flex;
     padding: 10px;
+    flex-direction: column;
     margin: 20px auto;
     border-radius: 0.5rem;
+    text-align: center;
 }
 
 footer nav {
@@ -240,14 +242,14 @@ footer nav {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-/* .form fieldset {
+ /* .form fieldset {
     display: grid;
     gap: .5rem;
     margin: 1rem;
     border: 1px solid rgb(0 0 0 /0.2);
     padding: 1rem;
-    background-color: red; */
-
+    background-color: red; 
+ } */
 
  .information address {
     padding: 10px;
@@ -281,7 +283,7 @@ input[type="checkbox"] {
     gap: 0.5rem;
 }
 
-/* button {
+ button {
     margin: 1rem;
     background-color: blue;
     color: #fff;
@@ -291,8 +293,7 @@ input[type="checkbox"] {
     font-size: 1rem;
     display: inline-block;
 
-} */
-
+} 
 button:hover {
     background-color: red;
 }
@@ -336,9 +337,9 @@ button:hover {
     max-width: 100%;
 }
 
-/* .action {
-    display: flex;
-    background-color: green;
+ .action {
+    display:flex ;
+    background-color: var(--accent2-color);
     max-width: 840px;
     margin: 10px auto;
     border-radius: .5rem;
@@ -346,15 +347,15 @@ button:hover {
     padding: 1rem;
     width: 100%;
 
-} */
+} 
 
-/* .action form {
+ .action form {
     max-width: 400px;
     margin: 0 auto;
     padding: 1rem;
     border: 1px solid rgb(0 0 0 /0.2);
     border-radius: 0.5rem;
-    background-color: red;
+    background-color: var(--primary-color);
     color: #eee;
 
 }
@@ -365,7 +366,7 @@ button:hover {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 /0.2);
     padding: 1rem;
-} */
+} 
 
 .history div {
     border: 1px solid rgb(0 0 0 /0.2);
@@ -388,7 +389,7 @@ button:hover {
 }
 
 span {
-    background-color: greenyellow;
+    background-color: var(--accent1-color);
 }
 
 .nabzo {
