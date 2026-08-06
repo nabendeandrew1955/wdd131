@@ -412,7 +412,7 @@ span {
     color: red;
     font-size: 1.2;
     border: 1px solid rgb(0 0 0 /0.2);
-    background-color: #aaa;
+    background-color: var(--secondary-color);
     border-radius: 0.5rem;
     padding: 0.5em;
     margin: 0.2rem;
@@ -526,7 +526,7 @@ img {
 
 .machine {
     box-sizing: border-box;
-    background-color: #95e916;
+    background-color: var(--primary-color);
 }
 
 .socialmedia img {
