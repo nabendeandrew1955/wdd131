@@ -4,18 +4,18 @@ document.querySelector("#lastmodified").textContent = `lastmodification: ${docum
 
 
 
-const hamButton = document.querySelector('#sidemenu');
-const navigation = document.querySelector('.nabzo');
+// const hamButton = document.querySelector('#sidemenu');
+// const navigation = document.querySelector('.nabzo');
 
-hamButton.addEventListener('click', () => {
-    navigation.classList.toggle('open');
-    hamButton.classList.toggle('open');
-});
+// hamButton.addEventListener('click', () => {
+//     navigation.classList.toggle('open');
+//     hamButton.classList.toggle('open');
+// });
 
 
-function toggleActive(Element) {
+// function toggleActive(Element) {
 
-}
+// }
 
 const machines = [
     {
@@ -165,6 +165,25 @@ document.querySelectorAll("nab a").forEach(link => {
     });
 });
 
+/*****************************localstorage*********/
 
+const todayDisplay = document.querySelector('.today');
+const visitDisplay = document.querySelector('.visits');
 
+// Get the stored value into local store
+let numVisits = Number(window.localStorage.getItem('visits-ls'));
+
+// Determine if this is the first visit or display number of visits
+
+if (numVisits !== 0) {
+    visitDisplay.textContent = numVisits;
+}
+else {
+    visitDisplay.textContent = `THIS IS YOUR FIRST VISIT`;
+}
+// iNCREMENT THE NUMBER OF VISITS
+numVisits++;
+// Store the new number of visits
+localStorage.setItem('visits-ls', numVisits);
+todayDisplay.textContent = Date.now;
 
