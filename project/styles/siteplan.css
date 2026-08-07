@@ -32,7 +32,7 @@ body {
 header,
 main,
 footer {
-    width: 840px;
+    max-width: 840px;
     margin: 0 auto;
 }
 
@@ -54,7 +54,7 @@ article {
     text-decoration: none;
 }
 
- .hero {
+.hero {
     position: relative;
 }
 
@@ -94,7 +94,7 @@ article {
     opacity: 0.7;
     background-color: var(--secondary-color);
     color: var(--primary-color);
-} 
+}
 
 header {
     margin: 1rem auto;
@@ -117,26 +117,85 @@ header log {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header nav ul {
+ /* header nav ul {
     display: flex;
     list-style: none;
-}
+} */
 
-header nav li {
+/* header nav li {
     flex: 1 1 auto;
+} */
+
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: #eee;
+    color: #000;
 }
 
-header nav a {
+#menu::before {
+    content: "≡";
+}
+
+/* nav {
+    background-color: #ace;
+} */
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+/* header nav a {
     display: block;
     color: navy;
     padding: 20px;
     text-decoration: none;
     font-size: 1.2rem;
+} */
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: navy;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: 1.2rem;
+    /* font-size: clamp(1rem, 2vmin, 1.5rem); */
+
 }
+/* 
 
 header nav a:hover {
     color: tomato;
     text-decoration: underline;
+} */
+
+
+
+.navigation a:hover,
+.navigation a:active {
+    color: white;
+    background-color: black;
+}
+
+.open li {
+    display: block;
+}
+
+#menu.open::before {
+    content: "X";
 }
 
 /* .history figure {
@@ -147,7 +206,7 @@ header nav a:hover {
     margin: 10px auto;
 } */
 
- .history {
+.history {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr auto;
     align-items: center;
@@ -157,7 +216,7 @@ header nav a:hover {
     max-width: 840px;
     margin: 10px auto;
 
-} 
+}
 
 .history h3 {
     display: flex;
@@ -165,12 +224,12 @@ header nav a:hover {
     grid-row: 1/2;
     background-color: var(--accent2-color);
     place-content: center;
-} 
+}
 
- .history p {
+.history p {
     width: 100%;
     height: auto;
-} 
+}
 
 /* .adventure figure {
     max-width: 200px;
@@ -187,15 +246,15 @@ header nav a:hover {
     max-width: 840px;
     margin: 10px auto;
 
-} 
+}
 
- .adventure h3 {
+.adventure h3 {
     display: grid;
     grid-column: 1/6;
     grid-row: 1/2;
     background-color: var(--accent2-color);
     place-content: center;
-} 
+}
 
 footer {
     display: flex;
@@ -242,7 +301,7 @@ footer nav {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
- /* .form fieldset {
+/* .form fieldset {
     display: grid;
     gap: .5rem;
     margin: 1rem;
@@ -251,7 +310,7 @@ footer nav {
     background-color: red; 
  } */
 
- .information address {
+.information address {
     padding: 10px;
     margin: 10px auto;
     align-items: center;
@@ -283,7 +342,7 @@ input[type="checkbox"] {
     gap: 0.5rem;
 }
 
- button {
+button {
     margin: 1rem;
     background-color: blue;
     color: #fff;
@@ -293,7 +352,8 @@ input[type="checkbox"] {
     font-size: 1rem;
     display: inline-block;
 
-} 
+}
+
 button:hover {
     background-color: red;
 }
@@ -337,8 +397,8 @@ button:hover {
     max-width: 100%;
 }
 
- .action {
-    display:flex ;
+.action {
+    display: flex;
     background-color: var(--accent2-color);
     max-width: 840px;
     margin: 10px auto;
@@ -347,9 +407,9 @@ button:hover {
     padding: 1rem;
     width: 100%;
 
-} 
+}
 
- .action form {
+.action form {
     max-width: 400px;
     margin: 0 auto;
     padding: 1rem;
@@ -366,7 +426,7 @@ button:hover {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 /0.2);
     padding: 1rem;
-} 
+}
 
 .history div {
     border: 1px solid rgb(0 0 0 /0.2);

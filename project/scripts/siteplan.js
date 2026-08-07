@@ -4,18 +4,18 @@ document.querySelector("#lastmodified").textContent = `lastmodification: ${docum
 
 
 
-// const hamButton = document.querySelector('#sidemenu');
-// const navigation = document.querySelector('.nabzo');
+ const hamButton = document.querySelector('#menu');
+ const navigation = document.querySelector('.navigation');
 
-// hamButton.addEventListener('click', () => {
-//     navigation.classList.toggle('open');
-//     hamButton.classList.toggle('open');
-// });
+ hamButton.addEventListener('click', () => {
+     navigation.classList.toggle('open');
+     hamButton.classList.toggle('open');
+ });
 
 
-// function toggleActive(Element) {
+ function toggleActive(Element) {
 
-// }
+ }
 
 const machines = [
     {
@@ -185,5 +185,4 @@ else {
 numVisits++;
 // Store the new number of visits
 localStorage.setItem('visits-ls', numVisits);
-todayDisplay.textContent = Date.now;
 
